@@ -84,8 +84,8 @@ If you manage to complete all the following steps you will be ready not only to 
 #### 2.1.3. Build and launch the PC simulator  
   - Click on the pink arrow button at the bottom-right of the Designer window: <img src="./img/TouchGFX-Launch_Simulator_Button.png" width ="30" />  
   - This will automatically generate the code, build the PC simulator and launch it  
-    Note that a debug window will show up in from of the main window, this window automatically appears when the function touchgfx_printf() is called in the code (see Model.cpp file).  
-  The call to touchgfx_printf() is only meant for PC Simulator debugging and is ignore when building for the target  
+    Note that a debug window will show up in from of the main window, this window automatically appears when the function **touchgfx_printf()** is called in the code (see Model.cpp file).  
+  The call to **touchgfx_printf()** is only meant for PC Simulator debugging and is ignore when building for the target  
   <br>![TouchGFX-Designer-Generate-Demo-Code](./img/TouchGFX-Designer_Simulate_Prime_Plus_Demo.gif)
 
 ### 2.2 Build project in VS Code&reg;
