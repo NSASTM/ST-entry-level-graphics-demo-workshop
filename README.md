@@ -42,8 +42,7 @@ The hardware setup consists in 2 boards:
   - Download [X-CUBE-TOUCHGFX](https://www.st.com/en/embedded-software/x-cube-touchgfx.html)
 
   - Extract the installer `X-CUBE-TOUCHGFX\4.26.1\Utilities\PC_Software\TouchGFXDesigner\TouchGFX-4.26.1.msi`  
-  <br>
-  ![TouchGFXDesignerInstaller](./img/TouchGFX-Designer_Installer.gif)
+  <br>![TouchGFXDesignerInstaller](./img/TouchGFX-Designer_Installer.gif)
 
 - Run the installer and prefer the default installation folder on `C:\` drive.  
 
@@ -85,7 +84,7 @@ If you manage to complete all the following steps you will be ready not only to 
   <br>
   ![TouchGFX-Designer-Import-Demo](./img/TouchGFX-Designer_Import_Prime_Plus_Demo.gif)
   
-#### 2.1.3 Build and launch the PC simulator  
+#### 2.1.3. Build and launch the PC simulator  
   - Click on the pink arrow button at the bottom-right of the Designer window: <img src="./img/TouchGFX-Launch_Simulator_Button.png" width ="30" />  
   - This will automatically generate the code, build the PC simulator and launch it  
     Note that a debug window will show up in from of the main window, this window automatically appears when the function touchgfx_printf() is called in the code (see Model.cpp file).  
