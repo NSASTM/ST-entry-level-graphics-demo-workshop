@@ -11,7 +11,7 @@ This repository contains all the requirements needed to follow the hands-on part
     - [1.2.1. TouchGFX Designer](#121-touchgfx-designer)
     - [1.2.2. VS Code](#122-vs-code)
 - [2. Sanity Check](#2-sanity-check)
-  - [2.1 Create a basic TouchGFX project](#21-create-a-basic-touchgfx-project)
+  - [2.1 Create a TouchGFX project and import a demo](#21-create-a-touchgfx-project-and-import-a-demo)
   - [2.2 Build project in VS Code](#22-build-project-in-vs-code)
 - [3. Hands-on](#3-hands-on)
 
@@ -68,21 +68,24 @@ The TouchGFX Designer installer cannot be downloaded in a standalone way, it is 
 Before starting the lab, let's check that your setup is functional.
 If you manage to complete all the following steps you will be ready not only to follow the hands-on part of this workshop but also start prototyping on STM32C5!
 
-- Plug the Riverdi display on the NUCLEO-C5A3ZG morpho connector, once plugged the text on each board with the same orientation should be read in the same direction, see below.  
-
-  <img src="./img/NUCLEO-C5A3ZG_RVA15MD.png" width ="250" />
-
-### 2.1 Create a basic TouchGFX project
+### 2.1 Create a TouchGFX project and import a demo
   [🔼Top](#table-of-contents)  
   
   1. Launch TouchGFX Designer and create an empty project using the NUCLEO-C5A3ZG template  
     ![TouchGFX-Create-NUCLEO-C5A-Project](./img/TouchGFX-Designer_Create_C5_Project.gif)
 
-  2. Insert a box widget in the main screen and set color to red (or any color)  
-    ![TouchGFX-Designer-Insert-Box](./img/TouchGFX-Designer_Insert_Box.gif)
+  2. import an existing demo  
+    - Use the `Edit->Import->GUI`` menu
+    - click on `Demos`  
+    - Select the `Knob Prime` demo  
+    ![TouchGFX-Designer-Import-Demo](./img/TouchGFX-Designer_Import_Prime_Plus_Demo.gif)
   
-  3. Generate the code  
-    ![TouchGFX-Designer-Generate-Code](./img/TouchGFX-Designer_Generate_Code.gif)
+  3. Launch the PC simulator  
+    - Click on the pink arrow button  
+    - This will automatically generate the code, build the PC simulator and launch it  
+      Note that a debug window will show up in from of the main window, this window automatically appears when the function touchgfx_printf() is called in the code (see Model.cpp file).  
+    The call to touchgfx_printf() is only meant for PC Simulator debugging and is ignore when building for the target  
+    ![TouchGFX-Designer-Generate-Demo-Code](./img/TouchGFX-Designer_Simulate_Prime_Plus_Demo.gif)
 
 ### 2.2 Build project in VS Code&reg;
   [🔼Top](#table-of-contents)  
@@ -90,8 +93,8 @@ If you manage to complete all the following steps you will be ready not only to 
   1. Open workspace in VS Code&reg;:  
     - You may either double-click on the `C:\Workshop\MyApplication\STM32C5A3ZG_NUCLEO_RVA15MD.code-workspace`, this will open a new VS Code&reg; windows (check the profile) or drag-and-drop the file in an existing VS Code&reg; set to the profile created earlier  
     - This will create a new workspace containing 2 folders  
-        - `STM32C5A3ZG_NUCLEO_RVA15MD_cmake` (main project)  
-        - `TouchGFX` (TouchGFX specific source code)  
+        `STM32C5A3ZG_NUCLEO_RVA15MD_cmake` (main project)  
+        `TouchGFX` (TouchGFX specific source code)  
     - Some popups will then appear on the bottom-right side of the windows during project automatic discovery, you can ignore them, we will force the project setup in the next step  
     ![VS Code&reg;-Open-Project](./img/VSCode-Open_Project_Updated.gif)
 
@@ -107,14 +110,19 @@ If you manage to complete all the following steps you will be ready not only to 
     - Click on CMake tab on the right side of the window  
     - In `Project Outline`, select `STM32C5A3ZG_NUCLEO_RVA15MD` and click on the `Build` icon  
     - This will automatically build the entire project, including TouchGFX code  
-    ![VS Code&reg;-Build-Project](./img/VSCode-Build_Project_Updated.gif)
+    ![VS Code&reg;-Build-Project](./img/VSCode-Demo_Prime_Plus_Build.gif)
+
+  4. Assemble the hardware boards    
+    Plug the Riverdi display on the NUCLEO-C5A3ZG morpho connector, once plugged the text on each board with the same orientation should be read in the same direction, see below.  
+    
+  <img src="./img/NUCLEO-C5A3ZG_RVA15MD.png" width ="250" />  
 
   5. Program the application  
     - Plug the board  
     - Click on the `Load and Debug` tab on the left side  
     - Click on `Start Debugging` or type `F5`  
     - Once stopped in main function, click on `Continue` (center-top toolbar) or type `F5`, if the board screen turns to red, sanity check is successfull!  
-    ![VS Code&reg;-Launch-Debug](./img/VSCode-Launch_Debug.gif)
+    ![VS Code&reg;-Launch-Debug](./img/VSCode-Demo_Prime_Plus_Debug.gif)
 
 ## 3. Hands-on
   [🔼Top](#table-of-contents)  
