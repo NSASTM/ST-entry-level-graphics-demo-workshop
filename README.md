@@ -131,7 +131,7 @@ If you manage to complete all the following steps you will be ready not only to 
   - Click on the `Load and Debug` tab on the left side  
   - Click on `Start Debugging` or type `F5`  
   - Once stopped in main function, click on `Continue` (center-top toolbar) or type `F5`, if the board screen turns to red, sanity check is successfull!  
-  <br>![VS Code&reg;-Launch-Debug](./img/VSCode-Demo_Prime_Plus_Debug.gif)
+  <br>![VS Code&reg;-Launch-Debug](./img/VSCode-Demo_Prime_Debug.gif)
 
 ## 3. Hands-on
   [🔼Top](#table-of-contents)  
