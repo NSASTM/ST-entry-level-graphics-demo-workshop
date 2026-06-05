@@ -9,10 +9,18 @@ This repository contains all the requirements needed to follow the hands-on part
   - [1.1. Hardware](#11-hardware)
   - [1.2. Software](#12-software)
     - [1.2.1. TouchGFX Designer](#121-touchgfx-designer)
-    - [1.2.2. VS Code](#122-vs-code)
+    - [1.2.2. VS Code®](#122-vs-code)
 - [2. Sanity Check](#2-sanity-check)
   - [2.1 Create a TouchGFX project and import a demo](#21-create-a-touchgfx-project-and-import-a-demo)
-  - [2.2 Build project in VS Code](#22-build-project-in-vs-code)
+    - [2.1.1 Launch TouchGFX Designer and create an empty project using the NUCLEO-C5A3ZG template](#211-launch-touchgfx-designer-and-create-an-empty-project-using-the-nucleo-c5a3zg-template)
+    - [2.1.2 Import an existing demo](#212-import-an-existing-demo)
+    - [2.1.3. Build and launch the PC simulator](#213-build-and-launch-the-pc-simulator)
+  - [2.2 Build project in VS Code®](#22-build-project-in-vs-code)
+    - [2.2.1 Open workspace in VS Code®:](#221-open-workspace-in-vs-code)
+    - [2.2.2 Setup the project](#222-setup-the-project)
+    - [2.2.3 Build the project](#223-build-the-project)
+    - [2.2.4 Assemble the hardware boards](#224-assemble-the-hardware-boards)
+    - [2.2.5 Program the application](#225-program-the-application)
 - [3. Hands-on](#3-hands-on)
 
 ## 1. Prerequisites
@@ -79,14 +87,14 @@ If you manage to complete all the following steps you will be ready not only to 
   - Use the `Edit->Import->GUI` menu  
   - click on `Demos`  
   - Select the `Knob Prime` demo  
-  <br>![TouchGFX-Designer-Import-Demo](./img/TouchGFX-Designer_Import_Prime_Plus_Demo.gif)
+  <br>![TouchGFX-Designer-Import-Demo](./img/TouchGFX-Designer_Import_Prime_Demo.gif)
   
 #### 2.1.3. Build and launch the PC simulator  
   - Click on the pink arrow button at the bottom-right of the Designer window: <img src="./img/TouchGFX-Launch_Simulator_Button.png" width ="30" />  
   - This will automatically generate the code, build the PC simulator and launch it  
     Note that a debug window will show up in from of the main window, this window automatically appears when the function **touchgfx_printf()** is called in the code (see Model.cpp file).  
   The call to **touchgfx_printf()** is only meant for PC Simulator debugging and is ignore when building for the target  
-  <br>![TouchGFX-Designer-Generate-Demo-Code](./img/TouchGFX-Designer_Simulate_Prime_Plus_Demo.gif)
+  <br>![TouchGFX-Designer-Generate-Demo-Code](./img/TouchGFX-Designer_Simulate_Prime_Demo.gif)
 
 ### 2.2 Build project in VS Code&reg;
   [🔼Top](#table-of-contents)  
